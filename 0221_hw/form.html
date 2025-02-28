@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>報名表單</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><label for="name">姓名：</label></td>
+            <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+            <td><label for="student_id">學號：</label></td>
+            <td><input type="text" id="student_id" name="student_id" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">電子郵件：</label></td>
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td><label for="phone">手機號碼：</label></td>
+            <td><input type="tel" id="phone" name="phone" required></td>
+        </tr>
+        <tr>
+            <td><label for="message">備註：</label></td>
+            <td><textarea id="message" name="message" rows="4"></textarea></td>
+        </tr>
+    </table>
+</body>
+</html>
