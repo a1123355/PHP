@@ -12,7 +12,9 @@
     please input your password<input type ="text" name = "uPwd"><br/>
     whatever<input type ="range"><br/>
     <input type = "hidden" name = "uSecret" value = "123">
-
+    Select your gender<br/>
+    male<input type = "radio" name = "uGender" value = "male"><br/>
+    Female<input type = "radio" name = "uGender" value = "Female"><br/>
     <input type = "submit"><input type = "reset">
     </form>
 </body>
