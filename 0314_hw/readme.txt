@@ -2,5 +2,5 @@
 username:admin
 password:123
 [user]
-username:user
+username:nuk
 password:123
