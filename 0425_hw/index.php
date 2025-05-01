@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>upload file</title>
+    <title>使用者註冊</title>
 </head>
 <body>
-    <?php
-    if ( file_exists("pic\\test.png") ){
-        echo '<img src="pic\\test.png" width = 10%>';
-    }
-    else{
-        print "檔案.php 不存在<br/>";
-    }
-    ?>
-    <form action = "confirm.php" method = "post" enctype = "multipart/form-data">
-        <input type = "file" name = "file"><br/>
-
-        <input type = "submit">
+    <h2>註冊表單</h2>
+    <form action="mailer.php" method="post" enctype="multipart/form-data">
+        <label>Name: <input type="text" name="name" required></label><br><br>
+        <label>Email: <input type="email" name="email" required></label><br><br>
+        <label>Photo: <input type="file" name="photo" accept="image/*" required></label><br><br>
+        <button type="submit">Register</button>
     </form>
 </body>
 </html>
